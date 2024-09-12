@@ -1,0 +1,34 @@
+package dio;
+
+import java.util.Scanner;
+
+public class ContaTerminal {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+		int numConta;
+		String numAgencia;
+		String nomeCliente;
+		double saldoCliente;
+
+		
+		//Pedir para o usuário inserir o nome dele
+		System.out.print("Digite seu nome: ");
+		nomeCliente = leia.next();
+		
+		//Pede para o usuário inserir o número da Agencia dele
+		System.out.print("Digite o numero da sua Agencia: ");
+		numAgencia = leia.next();
+		
+		//Pede para o usuario inserir o numero da conta dele
+		System.out.print("Digite o numero da sua conta: ");
+		numConta = leia.nextInt();
+		
+		//Pede para o usuário inserir o saldo atual da conta dele
+		System.out.print("Digite o seu saldo atual: ");
+		saldoCliente = leia.nextDouble();
+		
+		System.out.println("Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + numAgencia + ", conta " + numConta + " e seu saldo " + saldoCliente + " já está disponível para saque.");
+		
+	}
+}
