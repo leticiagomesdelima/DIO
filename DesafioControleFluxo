@@ -20,6 +20,5 @@ public class ProcessoSeletivo {
       } else {
          System.out.println("AGUARDANDO DEMAIS CANDIDATOS");
       }
-
    }
 }
